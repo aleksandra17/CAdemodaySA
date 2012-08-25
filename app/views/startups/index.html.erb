@@ -1,0 +1,41 @@
+<h1>Listing startups</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Industry</th>
+    <th>Website</th>
+    <th>Numemp</th>
+    <th>Yearfounded</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Mininvest</th>
+    <th>Amtraised</th>
+    <th>Targetamt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @startups.each do |startup| %>
+  <tr>
+    <td><%= startup.name %></td>
+    <td><%= startup.industry %></td>
+    <td><%= startup.website %></td>
+    <td><%= startup.numemp %></td>
+    <td><%= startup.yearfounded %></td>
+    <td><%= startup.city %></td>
+    <td><%= startup.state %></td>
+    <td><%= startup.mininvest %></td>
+    <td><%= startup.amtraised %></td>
+    <td><%= startup.targetamt %></td>
+    <td><%= link_to 'Show', startup %></td>
+    <td><%= link_to 'Edit', edit_startup_path(startup) %></td>
+    <td><%= link_to 'Destroy', startup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Startup', new_startup_path %>

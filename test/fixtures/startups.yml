@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  industry: MyString
+  website: MyString
+  numemp: MyString
+  yearfounded: MyString
+  city: MyString
+  state: MyString
+  mininvest: 1
+  amtraised: 1
+  targetamt: 1
+
+two:
+  name: MyString
+  industry: MyString
+  website: MyString
+  numemp: MyString
+  yearfounded: MyString
+  city: MyString
+  state: MyString
+  mininvest: 1
+  amtraised: 1
+  targetamt: 1

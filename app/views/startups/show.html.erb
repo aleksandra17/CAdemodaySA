@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @startup.name %>
+</p>
+
+<p>
+  <b>Industry:</b>
+  <%= @startup.industry %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @startup.website %>
+</p>
+
+<p>
+  <b>Numemp:</b>
+  <%= @startup.numemp %>
+</p>
+
+<p>
+  <b>Yearfounded:</b>
+  <%= @startup.yearfounded %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @startup.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @startup.state %>
+</p>
+
+<p>
+  <b>Mininvest:</b>
+  <%= @startup.mininvest %>
+</p>
+
+<p>
+  <b>Amtraised:</b>
+  <%= @startup.amtraised %>
+</p>
+
+<p>
+  <b>Targetamt:</b>
+  <%= @startup.targetamt %>
+</p>
+
+
+<%= link_to 'Edit', edit_startup_path(@startup) %> |
+<%= link_to 'Back', startups_path %>
