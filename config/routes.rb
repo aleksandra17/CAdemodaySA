@@ -1,4 +1,5 @@
 Seedvisor::Application.routes.draw do
+  root :to => 'startups#index'
   resources :startups
 
   # The priority is based upon order of creation:
